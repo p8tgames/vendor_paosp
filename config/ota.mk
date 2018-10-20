@@ -13,7 +13,7 @@ endif
 
 # XenonHD version
 XENONHD_VERSION := pornypie-$(shell date +"%y%m%d")-$(OTA_TYPE)
-DEVICE := $(subst xenonhd_,,$(TARGET_PRODUCT))
+DEVICE := $(subst pornaosp_,,$(TARGET_PRODUCT))
 
 ifneq ($(OTA_TYPE),Unofficial)
 # XenonHD OTA app
