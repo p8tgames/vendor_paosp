@@ -1,6 +1,6 @@
 # OTA default build type
 ifeq ($(OTA_TYPE),)
-OTA_TYPE=Unofficial
+OTA_TYPE=Amateur
 endif
 
 # Make sure the uppercase is used
@@ -12,7 +12,7 @@ OTA_TYPE=Official
 endif
 
 # XenonHD version
-XENONHD_VERSION := XenonHD-$(shell date +"%y%m%d")-$(OTA_TYPE)
+XENONHD_VERSION := pornypie-$(shell date +"%y%m%d")-$(OTA_TYPE)
 DEVICE := $(subst xenonhd_,,$(TARGET_PRODUCT))
 
 ifneq ($(OTA_TYPE),Unofficial)
