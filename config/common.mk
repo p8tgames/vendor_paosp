@@ -15,7 +15,9 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.sys.disable_rescue=true \
     ro.build.selinux=1 \
     ro.opa.eligible_device=true \
-    ro.storage_manager.enabled=true
+    ro.storage_manager.enabled=true \
+    ro.com.google.ime.themes_dir=/system/etc/gboard_theme \
+    ro.com.google.ime.theme_file=PornAosp.zip
 
 ifneq ($(TARGET_BUILD_VARIANT),user)
 # Thank you, please drive thru!
