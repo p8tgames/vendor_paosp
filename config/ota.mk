@@ -12,21 +12,23 @@ OTA_TYPE=Official
 endif
 
 # PornAOSP version
-PAOSP_VERSION := pornypie-$(shell date +"%y%m%d")-$(OTA_TYPE)
-DEVICE := $(subst pornaosp_,,$(TARGET_PRODUCT))
+PAOSP_VERSION := PAOSP-Pie-$(shell date +"%y%m%d")-$(OTA_TYPE)
+DEVICE := $(subst paosp_,,$(TARGET_PRODUCT))
 
-ifneq ($(OTA_TYPE),Unofficial)
+
+#We are not using this for now
+#ifneq ($(OTA_TYPE),Unofficial)
 # PornAOSP OTA app
-PRODUCT_PACKAGES += \
-    PornOTA
+#PRODUCT_PACKAGES += \
+#    PornOTA
 
 # OTA Configuration
-$(shell echo -e "OTA_Configuration\n \
-ota_url=https://mirrors.c0urier.net/android/teamhorizon/P/OTA/ota_$(DEVICE).xml\n \
-device_name=ro.paosp.device\n \
-release_type=Pie\n \
-version_source=ro.paosp.version\n \
-version_delimiter=-\n \
-version_position=1\n \
-version_format=yyMMdd" > $(OTA_DIR)/ota_conf)
-endif
+#$(shell echo -e "OTA_Configuration\n \
+#ota_url=https://mirrors.c0urier.net/android/paosp/P/OTA/ota_$(DEVICE).xml\n \
+#device_name=ro.paosp.device\n \
+#release_type=Pie\n \
+#version_source=ro.paosp.version\n \
+#version_delimiter=-\n \
+#version_position=1\n \
+#version_format=yyMMdd" > $(OTA_DIR)/ota_conf)
+#endif

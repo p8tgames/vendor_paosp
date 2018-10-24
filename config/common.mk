@@ -60,9 +60,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/paosp/config/permissions/paosp-sysconfig.xml:system/etc/sysconfig/paosp-sysconfig.xml
 
-# maybe this will work
+# PornAOSP Things
 PRODUCT_COPY_FILES += \
-    vendor/paosp/prebuilt/common/etc/gboard_theme/PornAosp.zip:system/etc/gboard_theme/PornAosp.zip
+    vendor/paosp/prebuilt/common/etc/gboard_theme/PornAosp.zip:system/etc/gboard_theme/PornAosp.zip \
+    vendor/paosp/prebuilt/common/overlay/LawnstepCi.apk:vendor/overlay/LawnstepCi.apk
 
 # init.d support
 PRODUCT_COPY_FILES += \
@@ -131,7 +132,9 @@ PRODUCT_PACKAGES += \
     Profiles \
     Turbo \
     turbo.xml \
-    privapp-permissions-turbo.xml
+    privapp-permissions-turbo.xml \
+    privapp-permissions-lawnchair.xml \
+    lawnchair-hiddenapi-package-whitelist.xml
 
 # Optional packages
 PRODUCT_PACKAGES += \
@@ -153,6 +156,8 @@ PRODUCT_PACKAGES += \
     Eleven \
     ExactCalculator \
     Jelly \
+    GBoard \
+    Lawnchair \
     LockClock \
     WallpaperPicker \
     WeatherProvider

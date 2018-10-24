@@ -1,1 +1,2 @@
 add_lunch_combo paosp_mido-userdebug
+add_lunch_combo paosp_whyred-userdebug
