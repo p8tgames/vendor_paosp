@@ -62,8 +62,7 @@ PRODUCT_COPY_FILES += \
 
 # PornAOSP Things
 PRODUCT_COPY_FILES += \
-    vendor/paosp/prebuilt/common/etc/gboard_theme/PornAosp.zip:system/etc/gboard_theme/PornAosp.zip \
-    vendor/paosp/prebuilt/common/overlay/LawnstepCi.apk:vendor/overlay/LawnstepCi.apk
+    vendor/paosp/prebuilt/common/etc/gboard_theme/PornAosp.zip:system/etc/gboard_theme/PornAosp.zip 
 
 # init.d support
 PRODUCT_COPY_FILES += \
@@ -132,9 +131,7 @@ PRODUCT_PACKAGES += \
     Profiles \
     Turbo \
     turbo.xml \
-    privapp-permissions-turbo.xml \
-    privapp-permissions-lawnchair.xml \
-    lawnchair-hiddenapi-package-whitelist.xml
+    privapp-permissions-turbo.xml 
 
 # Optional packages
 PRODUCT_PACKAGES += \
