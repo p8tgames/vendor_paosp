@@ -5,6 +5,7 @@ Officially Supported Devices:
 | Device                            | Codename                                                                           | Maintainer                                                | 
 | :-------------------------------: | :--------------------------------------------------------------------------------: | :-------------------------------------------------------: | 
 | Generic System Image (GSI)        | [phh_treble]                                                                       | [mattroot](https://github.com/mattroot)                   |
+| Xiaomi Redmi 5 Plus | [vince] | [4PERTURE](https://github.com/4PERTURE) |
 | Xiaomi Redmi Note 4               | [mido](https://github.com/pornypie/android_device_xiaomi_mido)                     | [JavAster](https://github.com/JavAster)                   |
 | Xiaomi Redmi Note 5               | [whyred](https://github.com/pornypie/android_device_xiaomi_whyred)                 | [edi194](https://github.com/edi184)                       |
 
