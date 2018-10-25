@@ -16,8 +16,7 @@ PAOSP_VERSION := PAOSP-Pie-$(shell date +"%y%m%d")-$(OTA_TYPE)
 DEVICE := $(subst paosp_,,$(TARGET_PRODUCT))
 
 
-#We are not using this for now
-#ifneq ($(OTA_TYPE),Unofficial)
+ifneq ($(OTA_TYPE),Unofficial)
 # PornAOSP OTA app
 PRODUCT_PACKAGES += \
     PornOTA
