@@ -24,7 +24,7 @@ PRODUCT_PACKAGES += \
 
 # OTA Configuration
 $(shell echo -e "OTA_Configuration\n \
-ota_url=https://github.com/pornypie/OTAconfig/blob/teen/ota_$(DEVICE).xml\n \
+ota_url=https://raw.githubusercontent.com/pornypie/OTAconfig/teen/ota_$(DEVICE).xml\n \
 device_name=ro.paosp.device\n \
 release_type=Pie\n \
 version_source=ro.paosp.version\n \
